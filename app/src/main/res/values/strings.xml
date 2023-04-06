@@ -1,0 +1,31 @@
+<resources>
+    <string name="app_name">StormProjectManagement</string>
+    <string name="tv_nodata_desc">Anda belum memiliki data Proyek. Silahkan tambah data</string>
+    <string name="tv_dummy_addeditTitle">Dummy Operation Project</string>
+    <string name="tv_addTitle">Add Project</string>
+    <string name="tv_editTitle">Edit Project</string>
+    <string name="tv_dummyProjectName">dummy_ProjectName</string>
+    <string name="tv_dummyDateProject">dummy_DateProject</string>
+    <string name="tv_dummyUsername">dummy_Username</string>
+    <string name="tv_dummyBudgetProject">dummy_budgetProject</string>
+    <string name="tv_dummyApproval">dummy_Approval</string>
+    <string name="tv_Approved">Approved</string>
+    <string name="tv_NotApproved">Not Approved</string>
+    <string name="tvAddEdit_ProjectName">Project Name :</string>
+    <string name="tvAddEdit_StartDate">Start Date :</string>
+    <string name="tvAddEdit_Deadline">Deadline :</string>
+    <string name="tvAddEdit_Username">Username :</string>
+    <string name="tvAddEdit_ProjectBudget">Project Budget :</string>
+    <string name="tvAddEdit_Approval">Approve this Project</string>
+    <string name="btnTxtAddEdit_Add">Add Project</string>
+    <string name="btnTxtAddEdit_Edit">Save Edit Project</string>
+    <string name="tv_DescPopup">Dummy_Operation Project Dummy_Condition</string>
+    <string name="btnTxt_ok">OK</string>
+    <string name="popup_success_add_desc">Project Data Added Successfully</string>
+    <string name="popup_not_success_add_desc">Project Data Was Not Added Successfully</string>
+    <string name="popup_success_edit_desc">Project Data Edited Successfully</string>
+    <string name="popup_not_success_edit_desc">Project Data Was Not Edited Successfully</string>
+    <string name="popup_question_delete_desc">Are you sure want to delete this data?</string>
+    <string name="popup_success_delete_desc">Project Data Deleted Successfully</string>
+    <string name="popup_not_success_delete_desc">Project Data Was Not Deleted Successfully</string>
+</resources>

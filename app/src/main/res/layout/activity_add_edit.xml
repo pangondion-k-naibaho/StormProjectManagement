@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.activity.AddEditActivity">
+
+    <TextView
+        android:id="@+id/tvTitleAddEdit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:textSize="18sp"
+        android:textColor="@color/black"
+        android:text="@string/tv_dummy_addeditTitle"/>
+
+    <TextView
+        android:id="@+id/tvTitleProjectName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="@+id/tvTitleAddEdit"
+        app:layout_constraintTop_toBottomOf="@+id/tvTitleAddEdit"
+        android:layout_marginTop="20dp"
+        android:textColor="@color/black"
+        android:textSize="15sp"
+        android:text="@string/tvAddEdit_ProjectName"/>
+
+    <EditText
+        android:id="@+id/et_ProjectName"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginHorizontal="10dp"
+        android:layout_marginTop="5dp"
+        android:paddingStart="10dp"
+        android:background="@drawable/bg_rectangle_white_stroke_grey"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.157"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvTitleProjectName" />
+
+    <TextView
+        android:id="@+id/tvTitleDateStart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="@+id/tvTitleProjectName"
+        app:layout_constraintTop_toBottomOf="@+id/et_ProjectName"
+        android:layout_marginTop="20dp"
+        android:textColor="@color/black"
+        android:textSize="15sp"
+        android:text="@string/tvAddEdit_StartDate"/>
+
+    <com.pangondionkn.stormprojectmanagement.view.advanced_ui.DatePickerLayout
+        android:id="@+id/dpl_StartDate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvTitleDateStart"
+        android:layout_marginHorizontal="10dp"
+        android:layout_marginTop="5dp"/>
+
+    <TextView
+        android:id="@+id/tvTitleDeadline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="@id/tvTitleDateStart"
+        app:layout_constraintTop_toBottomOf="@+id/dpl_StartDate"
+        android:layout_marginTop="20dp"
+        android:textColor="@color/black"
+        android:textSize="15sp"
+        android:text="@string/tvAddEdit_Deadline"/>
+
+    <com.pangondionkn.stormprojectmanagement.view.advanced_ui.DatePickerLayout
+        android:id="@+id/dpl_Deadline"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvTitleDeadline"
+        android:layout_marginHorizontal="10dp"
+        android:layout_marginTop="5dp"/>
+
+    <TextView
+        android:id="@+id/tvTitleUserName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="@+id/tvTitleDeadline"
+        app:layout_constraintTop_toBottomOf="@+id/dpl_Deadline"
+        android:layout_marginTop="20dp"
+        android:textSize="15sp"
+        android:textColor="@color/black"
+        android:text="@string/tvAddEdit_Username"/>
+
+    <EditText
+        android:id="@+id/etUsername"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvTitleUserName"
+        android:layout_marginTop="5dp"
+        android:layout_marginHorizontal="10dp"
+        android:paddingStart="10dp"
+        android:background="@drawable/bg_rectangle_white_stroke_grey"/>
+
+    <TextView
+        android:id="@+id/tvTitleBudget"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="@id/tvTitleUserName"
+        app:layout_constraintTop_toBottomOf="@+id/etUsername"
+        android:padding="5dp"
+        android:layout_marginTop="20dp"
+        android:textColor="@color/black"
+        android:textSize="15sp"
+        android:text="@string/tvAddEdit_ProjectBudget"/>
+
+    <EditText
+        android:id="@+id/etBudgetProject"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvTitleBudget"
+        android:layout_marginHorizontal="10dp"
+        android:layout_marginTop="5dp"
+        android:paddingStart="10dp"
+        android:background="@drawable/bg_rectangle_white_stroke_grey"
+        android:inputType="number"/>
+
+    <CheckBox
+        android:id="@+id/cb_Approval"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etBudgetProject"
+        android:layout_marginTop="20dp"/>
+
+    <TextView
+        android:id="@+id/tvTitleApproval"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toEndOf="@+id/cb_Approval"
+        app:layout_constraintTop_toTopOf="@+id/cb_Approval"
+        app:layout_constraintBottom_toBottomOf="@+id/cb_Approval"
+        android:layout_marginStart="5dp"
+        android:textColor="@color/black"
+        android:textSize="15sp"
+        android:text="@string/tvAddEdit_Approval"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_AddorSaveEdit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="20dp"
+        android:layout_marginHorizontal="10dp"
+        android:background="@drawable/bg_rectangle_primary"
+        android:textColor="@color/white"
+        android:textAllCaps="false"
+        android:textSize="18sp"
+        android:text="@string/tv_dummy_addeditTitle"/>
+
+    <ProgressBar
+        android:id="@+id/pb_AddEdit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:indeterminateTint="@color/blue_primary"
+        android:visibility="gone"
+        tools:visibility="visible"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

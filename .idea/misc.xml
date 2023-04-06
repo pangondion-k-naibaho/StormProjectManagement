@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/dionk/AndroidStudioProjects/StormProjectManagement/app/src/main/res/drawable/bg_circle_blue.xml" value="0.172" />
+        <entry key="..\:/Users/dionk/AndroidStudioProjects/StormProjectManagement/app/src/main/res/drawable/bg_circle_green.xml" value="0.172" />
+        <entry key="..\:/Users/dionk/AndroidStudioProjects/StormProjectManagement/app/src/main/res/drawable/bg_circle_red.xml" value="0.172" />
+        <entry key="..\:/Users/dionk/AndroidStudioProjects/StormProjectManagement/app/src/main/res/drawable/bg_rectangle_primary.xml" value="0.1735" />
+        <entry key="..\:/Users/dionk/AndroidStudioProjects/StormProjectManagement/app/src/main/res/drawable/bg_rectangle_white_stroke_grey.xml" value="0.172" />
+        <entry key="..\:/Users/dionk/AndroidStudioProjects/StormProjectManagement/app/src/main/res/drawable/ic_add_white.xml" value="0.172" />
+        <entry key="..\:/Users/dionk/AndroidStudioProjects/StormProjectManagement/app/src/main/res/drawable/ic_nodata.xml" value="0.172" />
+        <entry key="..\:/Users/dionk/AndroidStudioProjects/StormProjectManagement/app/src/main/res/layout/activity_add_edit.xml" value="0.27447916666666666" />
+        <entry key="..\:/Users/dionk/AndroidStudioProjects/StormProjectManagement/app/src/main/res/layout/activity_main.xml" value="0.264" />
+        <entry key="..\:/Users/dionk/AndroidStudioProjects/StormProjectManagement/app/src/main/res/layout/layout_datepicker.xml" value="0.264" />
+        <entry key="..\:/Users/dionk/AndroidStudioProjects/StormProjectManagement/app/src/main/res/layout/layout_item_project.xml" value="0.264" />
+        <entry key="..\:/Users/dionk/AndroidStudioProjects/StormProjectManagement/app/src/main/res/layout/layout_popup.xml" value="0.2734375" />
+        <entry key="..\:/Users/dionk/AndroidStudioProjects/StormProjectManagement/app/src/main/res/layout/layout_popup_binary.xml" value="0.12708333333333333" />
+        <entry key="..\:/Users/dionk/AndroidStudioProjects/StormProjectManagement/app/src/main/res/layout/layout_popupspm.xml" value="0.2734375" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

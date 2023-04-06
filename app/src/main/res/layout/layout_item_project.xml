@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="10dp"
+    android:layout_marginVertical="5dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/bg_rectangle_white_stroke_grey">
+
+    <ImageView
+        android:id="@+id/iv_icProjectName"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_DeleteProject"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/ic_task_grey"/>
+
+    <TextView
+        android:id="@+id/tv_projectName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:maxWidth="200dp"
+        android:ellipsize="end"
+        android:lines="1"
+        app:layout_constraintStart_toEndOf="@+id/iv_icProjectName"
+        app:layout_constraintTop_toTopOf="@+id/iv_icProjectName"
+        app:layout_constraintBottom_toBottomOf="@+id/iv_icProjectName"
+        android:layout_marginStart="20dp"
+        android:textSize="15sp"
+        android:textColor="@color/black"
+        android:text="@string/tv_dummyProjectName"/>
+
+    <ImageView
+        android:id="@+id/iv_icProjectDate"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        app:layout_constraintStart_toStartOf="@+id/iv_icProjectName"
+        app:layout_constraintTop_toBottomOf="@+id/iv_icProjectName"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/ic_calendar_grey"/>
+
+    <TextView
+        android:id="@+id/tv_ProjectDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="@+id/tv_projectName"
+        app:layout_constraintBottom_toBottomOf="@+id/iv_icProjectDate"
+        app:layout_constraintTop_toTopOf="@+id/iv_icProjectDate"
+        android:textSize="15sp"
+        android:textColor="@color/black"
+        android:text="@string/tv_dummyDateProject"/>
+
+    <ImageView
+        android:id="@+id/iv_icUserName"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        app:layout_constraintStart_toStartOf="@+id/iv_icProjectDate"
+        app:layout_constraintTop_toBottomOf="@+id/iv_icProjectDate"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/ic_person_grey"/>
+
+    <TextView
+        android:id="@+id/tv_Username"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="@+id/tv_ProjectDate"
+        app:layout_constraintBottom_toBottomOf="@+id/iv_icUserName"
+        app:layout_constraintTop_toTopOf="@+id/iv_icUserName"
+        android:textColor="@color/black"
+        android:textSize="15sp"
+        android:text="@string/tv_dummyUsername"/>
+
+    <ImageView
+        android:id="@+id/iv_icBudgetProject"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        app:layout_constraintStart_toStartOf="@+id/iv_icUserName"
+        app:layout_constraintTop_toBottomOf="@id/iv_icUserName"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/ic_dollar_grey"/>
+
+    <TextView
+        android:id="@+id/tv_Budgetproject"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="@+id/tv_Username"
+        app:layout_constraintBottom_toBottomOf="@+id/iv_icBudgetProject"
+        app:layout_constraintTop_toTopOf="@+id/iv_icBudgetProject"
+        android:textSize="15sp"
+        android:textColor="@color/black"
+        android:text="@string/tv_dummyBudgetProject"/>
+
+    <ImageView
+        android:id="@+id/iv_icApproval"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        app:layout_constraintStart_toStartOf="@id/iv_icBudgetProject"
+        app:layout_constraintTop_toBottomOf="@+id/iv_icBudgetProject"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/ic_close_white"
+        android:background="@drawable/bg_circle_red"/>
+
+    <TextView
+        android:id="@+id/tv_Approval"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="@+id/tv_Budgetproject"
+        app:layout_constraintBottom_toBottomOf="@+id/iv_icApproval"
+        app:layout_constraintTop_toTopOf="@+id/iv_icApproval"
+        android:textColor="@color/black"
+        android:textSize="15sp"
+        android:text="@string/tv_dummyApproval"/>
+
+    <ImageButton
+        android:id="@+id/btn_DeleteProject"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:src="@drawable/ic_delete_white"
+        android:background="@drawable/bg_circle_red"
+        tools:ignore="MissingConstraints" />
+
+    <ImageButton
+        android:id="@+id/btn_EditProject"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        app:layout_constraintEnd_toStartOf="@+id/btn_DeleteProject"
+        app:layout_constraintTop_toTopOf="@+id/btn_DeleteProject"
+        app:layout_constraintBottom_toBottomOf="@+id/btn_DeleteProject"
+        android:layout_marginEnd="20dp"
+        android:src="@drawable/ic_edit_white"
+        android:background="@drawable/bg_circle_green"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
